@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/img/carousel/TII.jpg"
+    />
+    <script
+      src="https://kit.fontawesome.com/a7a47f2cc7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Inicio - TIENDA DIGITALERS</title>
+  </head>
+  <body data-bs-theme="dark">
+
+    <header>
+  
+      
+      <nav class="navbar navbar-expand-lg vale-nav py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img  class="img-fluid ms-1 vale-logo" src="/public/img/TII.jpg" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="vale-nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="vale-nav-link" href="/pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="vale-nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+        
+
+          <div class="d-flex">
+          <div class="dropdown dropstart">
+          <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+          </a>
+          <ul id="carrito" class="dropdown-menu mx-2">
+            <table id="lista-carrito" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Imagen</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Precio</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+        <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+              <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+              <button id="procesar-pedido" class="btn btn-danger">Procesar Compra</button>
+        </div>
+     
+    </header>
+    <main class="container">
+      <!--carousel-->
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner vale-carru">
+          <div class="carousel-item active">
+            <img
+              src="/public/img/carrousel/venta.jpg"
+              class="d-block w-10 vale-carru"
+              alt="encontras lo que buscas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/public/img/carrousel/pc.2.jpg"
+              class="d-block w-10"
+              alt="Promociones"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/public/img/carrousel/pc3.jpg"
+              class="d-block w-10 vale-carru"
+              alt="Productos"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Atrás</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    
+   
+            <!--  <a href="pages/carrito.html" class="text-reset me-3"> </a> -->
+
+      </nav>
+    </header>
+    <main class="container">
+      <section class="row">
+        <!-- corousel -->
+      </section>
+
+      <section id="lista-productos" class="row my-5">
+        
+        <div class="card col-3 m-3 shadow-sm card-vale">
+          <img src="public/img/lenovo.jpg" class="card-img-top" alt="...">
+          <div class="card-body ca-b">
+            <h5 class="card-title">LENOVO</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item text-uppercase color">Rojo</li>
+              <li class="list-group-item">Muy recomedada dura la bateria</li>
+              <li class="list-group-item precio">3453.30 $</li>
+            </ul>
+            <a href="#" class="btn btn-danger agregar-carrito val-b" data-id="1">Comprar</a>
+          </div>
+        </div> <!-- .card -->
+
+        <div class="card col-3 m-3 shadow-sm card-vale">
+          <img src="public/img/huawei.jpg" class="card-img-top" alt="...">
+          <div class="card-body ca-b">
+            <h5 class="card-title">HUAWEI</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item text-uppercase color">GRIS</li>
+              <li class="list-group-item">Tamaño pefecta</li>
+              <li class="list-group-item precio">2345.20 $</li>
+            </ul>
+            <a href="#" class="btn btn-danger agregar-carrito val-b" data-id="2">Comprar</a>
+          </div>
+        </div> <!-- .card -->
+        <div class="card col-3 m-3 shadow-sm card-vale">
+          <img src="public/img/predactor.jpg" class="card-img-top" alt="...">
+          <div class="card-body ca-b">
+            <h5 class="card-title">ACER</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item text-uppercase color">Verde</li>
+              <li class="list-group-item">Economica</li>
+              <li class="list-group-item precio">3405.20 $</li>
+            </ul>
+            <a href="#" class="btn btn-danger agregar-carrito val-b" data-id="2">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card col-3 m-3 shadow-sm card-vale">
+          <img src="public/img/dell.jpg" class="card-img-top" alt="...">
+          <div class="card-body ca-b">
+            <h5 class="card-title">DELL</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item text-uppercase color">Azul</li>
+              <li class="list-group-item">Confiable seguridad maxima</li>
+              <li class="list-group-item precio">1234.50 $</li>
+            </ul>
+            <a href="#" class="btn btn-danger agregar-carrito val-b" data-id="3">Comprar</a>
+          </div>
+        </div> <!-- .card -->
+
+        <div class="card col-3 m-3 shadow-sm card-vale">
+          <img src="public/img/tablet.jpg" class="card-img-top" alt="...">
+          <div class="card-body ca-b">
+            <h5 class="card-title text-uppercase">TABLET</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item text-uppercase color">Negro</li>
+              <li class="list-group-item">Adaptable</li>
+              <li class="list-group-item precio">5867.20 $</li>
+            </ul>
+            <a href="#" class="btn btn-danger agregar-carrito val-b" data-id="4">Comprar</a>
+          </div>
+        </div> <!-- .card -->
+
+        <div class="card col-3 m-3 shadow-sm card-vale">
+          <img src="public/img/hp.jpg" class="card-img-top" alt="...">
+          <div class="card-body ca-b">
+            <h5 class="card-title text-uppercase">HP</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="list-group-item text-uppercase color">Blanco</li>
+              <li class="list-group-item">La mejor del mercado</li>
+              <li class="list-group-item precio">234.50 $</li>
+            </ul>
+            <a href="#" class="btn btn-danger agregar-carrito val-b" data-id="5">Comprar</a>
+          </div>
+        </div> <!-- .card -->
+
+        
+
+      </section>
+
+    </main>
+    <footer class="container-fluid">
+
+    </footer>
+
+    <script type="module" src="/main.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  </body>
+</html>

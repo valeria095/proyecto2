@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>  
+    <title>Proyecto Integrador - Etapa 1 (Carrito)</title>
+  </head>
+  <body data-bs-theme="dark">
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary vale-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img  class="img-fluid ms-1 vale-logo" src="/public/img/TII.jpg" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="vale-nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="vale-nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="vale-nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="container my-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-8">
+            <div class="card mb-4 vale-carrito">
+              <div class="card-header py-4">
+                <h5 class="mb-0">Carrito de productos </h5>
+              </div>
+
+              <div class="card-body" id="lista-compra">        
+                
+              </div> <!-- lista-compra -->
+
+            </div>
+
+            <div class="card mb-4 tarj-val">
+              <div class="card-body tarjetas">
+                <p><strong>Métodos de pago aceptados</strong></p>
+                <img src="/public/img/tarjetas/amex.svg" alt="American Express" class="me-2 im-v">
+                <img src="/public/img/tarjetas/master.svg" alt="Mastercard" class="me-2 im-v">
+                <img src="/public/img/tarjetas/visa.svg" alt="Visa" class="me-2 im-v">
+                <img src="/public/img/tarjetas/paypal.svg" alt="PayPal" class="me-2 im-v">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-4">
+            <div class="card mb-4 val-car">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Resumen carrito</h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Productos
+                    <span id="sub-total"></span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Envío
+                    <span>Gratis</span>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <div>
+                      <strong>IVA</strong>
+                    </div>
+                    <p><strong id="iva"></strong></p>
+                  </li>
+                  
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <div>
+                      <strong>Total de la compra</strong>
+                      <strong>(IVA Incluido)</strong>
+                    </div>
+                    <p><strong id="total"></strong></p>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn btn-success btn-lg btn-block mt-4 vale-boton">Ir a pagar</button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+
+      </section>
+
+    </main>
+   
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
